@@ -1,0 +1,17 @@
+.nameFormControl {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+.editLine {
+    width: 100%;
+    position: absolute;
+    border: 1px solid #1565C0;
+    margin-top: -10px;
+}
+
+.imageUpload{
+    margin: auto;
+    width: auto;
+}

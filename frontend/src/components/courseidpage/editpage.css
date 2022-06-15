@@ -1,0 +1,53 @@
+.editPageHeader{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imageUploadCourse{
+    display: flex;
+    align-items: center;
+}
+
+.editPageLine{
+    position: relative;
+    border: 1px solid #1565C0;
+    margin-top: -1px;
+    margin-bottom: 0px;
+}
+
+.editPageBody{
+    display: flex;
+    align-items: center;
+}
+
+.editPageForm{
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.editPageButtons{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.editPageButtonsDiv{
+    text-align: center;
+    width: 250px;
+    height: 35px;
+}
+
+#editPageButtonsText{
+    margin-top: 5px;
+    color: red;
+    font-size: 15px;
+    word-wrap: normal;
+}
+
+.editPageVideos{
+
+}

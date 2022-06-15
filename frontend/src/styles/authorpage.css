@@ -1,0 +1,21 @@
+.coursesListAuthor{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.courseAuthor{
+    background-color: white;
+    display: inline-block;
+    max-width: 250px;
+    min-width: 200px;
+    max-height: 150px;
+}
+
+.authorLine{
+    width: 100%;
+    position: absolute;
+    border: 1px solid #1565C0;
+    position: relative;
+    margin-bottom: 10px;
+}

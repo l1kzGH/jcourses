@@ -1,0 +1,26 @@
+.primer {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+}
+
+.primerHead{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.primerWithoutBorder{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+
+.pwbHead{
+    display: flex;
+    justify-content: center;
+}

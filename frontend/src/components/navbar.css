@@ -1,0 +1,32 @@
+.notifyButton {
+    position: relative;
+    width: 38px;
+    heigth: auto;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.notifyMain{
+    position: absolute;
+    z-index: 9999;
+    top: 38px;
+    left: -4px;
+
+    width: 300px;
+    height: 100px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    background-color: white;
+}
+
+.notifyTextHead{
+    color: black;
+    font-size: 18px;
+}
+
+.notifyTextBody{
+    color: black;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+.row{
+    justify-content: center;
+}
+
+::selection {
+    background: #FDD835;
+    color: #000;
+}
+
+.imageClass {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.card {
+    background: #fff;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #000;
+
+    min-width: 400px;
+}
+
+.header {
+    position: relative;
+    padding: 20px;
+}
+
+.description {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.h1c {
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+p {
+    color: #455A64;
+    line-height: 100%;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid #1565C0;
+    margin-top: 20px;
+}
+
+.social-line {
+    position: relative;
+    top: 10px;
+}
+
+a i.fa {
+    font-size: 1.5em;
+}
+
+.btn-twitter {
+    margin-top: 10px;
+}
+
+.editButton {
+    position: absolute;
+    right: 5%;
+}
