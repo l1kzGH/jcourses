@@ -12,8 +12,8 @@ const NavBar = () => {
 
     const [notifies, setNotifies] = useState([]);
 
-    useEffect(() => {
-        if (username != undefined && username != null)
+    const getNotifies = () => {
+        if (username != null)
             axios({
                 method: "get",
                 url: "http://localhost:8080/notification",
@@ -24,9 +24,20 @@ const NavBar = () => {
                 headers: {"Content-Type": "multipart/form-data"},
                 withCredentials: true
             }).then((response) => {
-                console.log(response.data);
-                setNotifies(response.data);
-            })
+                let l = response.data.length;
+                if(l>=2){
+                    let res = [response.data[l-2], response.data[l-1]];
+                    setNotifies(res);
+                    console.log(res);
+                } else {
+                    setNotifies(response.data);
+                    console.log(response.data);
+                }
+            });
+    }
+
+    useEffect(() => {
+        getNotifies();
     }, [username]);
 
     const logout = () => {
@@ -74,10 +85,12 @@ const NavBar = () => {
                                     <Button variant="outline-light">
                                         &#128276;
                                     </Button>
-                                    {
-                                        notifies.map((notify, index) => <NotifyItem key={index} notify={notify}
-                                                                                    index={index}/>)
-                                    }
+                                    <div className="notifyScroll">
+                                        {
+                                            notifies.map((notify, index) =>
+                                                <NotifyItem key={index} notify={notify} index={index} getNotifies={getNotifies}/>)
+                                        }
+                                    </div>
                                 </div>,
 
                                 role == "AUTHOR" || role == "ADMIN" ?

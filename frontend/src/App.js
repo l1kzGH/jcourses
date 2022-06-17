@@ -1,18 +1,16 @@
-import React, {useEffect, useLayoutEffect, useReducer, useState} from "react";
-import {BrowserRouter, Route} from "react-router-dom";
+import React, {useEffect, useReducer, useState} from "react";
+import {BrowserRouter} from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 import NavBar from "./components/NavBar";
 import "./App.css";
 import isAuthReducer, {initialAuthState} from "./reducers/isAuthReducer";
 import {AuthContext} from "./context/authContext";
-import NotFoundPage from "./pages/notfound/NotFoundPage";
 
 function App() {
 
     const [state, dispatch] = useReducer(isAuthReducer, initialAuthState);
     const [role, setRole] = useState();
     const [username, setUsername] = useState();
-    const [id, setId] = useState();
 
     useEffect(() => {
         if (localStorage.getItem('auth')) {

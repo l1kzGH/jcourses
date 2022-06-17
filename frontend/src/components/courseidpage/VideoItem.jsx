@@ -9,7 +9,7 @@ const VideoItem = ({video, setVideoURL, setPlayerStatus, deleteVideo, courseInfo
     const playVideo = () => {
         setVideoURL("http://localhost:3000/videos/" + video.course_id + "/" + video.video_url);
         setPlayerStatus(true);
-        console.log(video.video_url);
+        //console.log(video.video_url);
     }
 
     return (

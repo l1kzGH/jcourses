@@ -17,16 +17,49 @@
     height: 100px;
 
     border: 1px solid black;
-    border-radius: 3px;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .notifyTextHead{
+    text-align: center;
     color: black;
     font-size: 18px;
 }
 
 .notifyTextBody{
     color: black;
+}
+
+.notifyScroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/*-----*/
+
+.close {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 5px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
 }
