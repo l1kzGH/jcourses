@@ -1,6 +1,5 @@
 package com.likz.spring.course.notification;
 
-import com.likz.spring.follow.FollowDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -17,7 +16,7 @@ public class NotificationController {
 
     @GetMapping
     @PreAuthorize("hasAuthority('USER') or hasAuthority('ADMIN') or hasAuthority('AUTHOR')")
-    public ResponseEntity<List<NotificationResponse>> findByUserUsername(@RequestParam String username){
+    public ResponseEntity<List<NotificationResponse>> findByUserUsername(@RequestParam String username) {
         return ResponseEntity.ok(notificationService.findByUserUsername(username));
     }
 
